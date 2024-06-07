@@ -12,6 +12,16 @@
         .image-hover-shadow:hover {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+        .profile-image {
+            width: 200px;
+        }
+        .text {
+            margin: 0 auto;
+            max-width: 60%;
+        }
+        .text_2 {
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body class="font-roboto bg-gray-100">
@@ -32,107 +42,154 @@
     <section id="title" class="bg-green-100 py-20 text-center">
         <h1 id="dynamic" class="text-4xl font-bold"></h1>
         <div class="mt-8">
-            <img src="https://via.placeholder.com/150" alt="Profile Image" class="rounded-full mx-auto">
+            <img src="증명사진.jpg" alt="Profile Image" class="rounded-full mx-auto profile-image">
         </div>
+        <script>
+            const content = "안녕하세요.\n제 이름은 김도훈 입니다.\n노력하는 개발자가 되고 싶어요!";
+            const text = document.getElementById("dynamic");
+            let index = 0;
+            let txt = "";
+
+            function typing() {
+                if (index < content.length) {
+                    if (content[index] === '\n') {
+                        txt += '<br>';
+                    } else {
+                        txt += content[index];
+                    }
+                    text.innerHTML = txt;
+                    index++;
+                }
+            }
+            setInterval(typing, 320);
+        </script>
     </section>
 
     <section id="about" class="bg-white py-20 text-center">
         <h2 class="text-3xl font-bold">ABOUT</h2>
-        <p class="mt-4">예시 문장입니다</p>
+        <details>
+            <summary>성장 과정</summary>
+             <p class="mt-4 text">검과 마법의 판타지 세계는 무릇 사춘기 아이들이라면 매료될 수 밖에 없는 세계입니다. 다른 많은 아이들이 그렇듯 저는 게임을 즐겨하고 판타지 소설을 좋아해왔습니다. 소설 속에서 펼쳐지는 무한한 상상력과 게임을 통해 경험하는 가상 세계에 깊이 매료되었고, 이러한 관심은 제가 성장하는 과정에서 중요한 역할을 했습니다. 특히 판타지 소설을 읽으며 그 속의 이야기와 캐릭터들을 상상하는 것이 큰 즐거움이었습니다. '해리포터' 시리즈와 같은 대작 소설을 읽으며 상상의 나래를 펼쳤고, '반지의 제왕'과 같은 판타지 소설에 심취했습니다. 이러한 경험들은 저에게 창의적인 사고를 키워주었고, 흥미를 불러일으켰습니다.<br><br>
+
+대학생이 되어 진로를 고민하는 과정에서, 제가 좋아하던 소설과 웹툰이 게임으로 출시되는 모습을 보며 큰 영감을 받았습니다. 미디어 트렌드 시대에서 내가 좋아하던 소설, 웹툰이 지식 재산(IP)이 되어 게임으로 출시되는 것을 보고 내가 상상하는 세계를 창조해 보고 싶다는 강한 열망이 생겼고, 이는 게임 개발자를 목표로 삼게 된 결정적인 계기가 되었습니다..</p>
+        
         <div class="mt-8 flex justify-center items-center space-x-4">
             <button class="p-2 bg-gray-200 rounded-full">◀</button>
             <div class="flex space-x-4">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="해리포터.jpg" alt="Image" class="image-hover-shadow">
+                <img src="반지의제왕.jpg" alt="Image" class="image-hover-shadow">
+                <img src="나혼렙.jpg" alt="Image" class="image-hover-shadow">
             </div>
             <button class="p-2 bg-gray-200 rounded-full">▶</button>
         </div>
+            </details>
     </section>
 
     <section id="goal" class="bg-green-100 py-20 text-center">
         <h2 class="text-3xl font-bold">GOAL</h2>
-        <p class="mt-4">예시 문장입니다</p>
-        <div class="mt-8 flex justify-center items-center space-x-4">
-            <button class="p-2 bg-gray-200 rounded-full">◀</button>
-            <div class="flex space-x-4">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-            </div>
-            <button class="p-2 bg-gray-200 rounded-full">▶</button>
-        </div>
+        <details>
+            <summary>목표</summary>
+             <p class="mt-4 text">저의 궁극적인 목표는 단순히 게임을 코딩하는 개발자가 되는 것을 넘어서, 개발 외에도 프로젝트 매니저(PM)와 아트 분야에서도 견문을 넓히는 것입니다. 다양한 분야의 지식과 경험을 쌓아, 나중에는 처음부터 끝까지 제가 구상한 게임을 직접 출시하는 것이 꿈입니다.<br><br>
+
+현재 저는 게임 개발을 위한 프로그래밍 기술을 배우고 있지만, 동시에 게임 아트 디자인과 프로젝트 매니징에도 관심을 가지고 있습니다. 이러한 다양한 분야에서의 경험이 쌓이면, 보다 완성도 높은 게임을 만들어낼 수 있을 것이라고 생각합니다. 저는 게임을 통해 사람들에게 감동과 즐거움을 주고, 제가 상상하는 세계를 많은 사람들과 공유하고 싶습니다.</p>
+       
+            </details>
     </section>
 
     <section id="issue" class="bg-white py-20 text-center">
         <h2 class="text-3xl font-bold">ISSUE</h2>
-        <p class="mt-4">예시 문장입니다</p>
-        <p class="mt-2 text-blue-500 underline cursor-pointer">확률 논란에 관한 뉴스기사</p>
-        <div class="mt-8 flex justify-center items-center space-x-4">
-            <button class="p-2 bg-gray-200 rounded-full">◀</button>
-            <div class="flex space-x-4">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-            </div>
-            <button class="p-2 bg-gray-200 rounded-full">▶</button>
-        </div>
+        <details>
+            <summary>최근 사회 이슈</summary>
+             <p class="mt-4 text">최근 사회에서 게임 확률형 아이템에 대한 논란이 크게 일어났습니다. 특히, 게임 유저들이 실제 돈을 지불하고 구매하는 아이템들의 확률이 불투명하게 운영되는 경우가 많아 소비자들 사이에서 큰 불만이 제기었습니다 .<br><br>
+
+저는 게임 유저 또한 상품을 구매하는 고객으로써 정당한 보호를 받아야 한다고 생각합니다. 게임 내 아이템 구매는 단순한 소비 행위가 아니라, 유저들이 게임 속에서 즐거움을 느끼기 위한 중요한 요소입니다. 하지만 불투명한 확률 시스템은 유저들에게 불신을 심어주고, 이는 게임 산업 전반에 악영향을 미칠 수 있습니다. 따라서 게임 개발사들은 확률형 아이템의 확률을 투명하게 공개하고, 유저들이 합리적인 소비를 할 수 있도록 도와야 합니다. 이를 통해 게임 산업의 신뢰를 회복하고, 건강한 게임 문화를 조성하는 것이 중요하다고 생각합니다.
+</p>
+        <a href="https://m.ddaily.co.kr/page/view/2024031517222989587" class="mt-2 text-blue-500 underline cursor-pointer">확률 논란에 관한 뉴스기사</a>
+        
+            </details>
     </section>
 
     <section id="skill" class="bg-green-100 py-20 text-center">
         <h2 class="text-3xl font-bold">SKILL</h2>
-        <p class="mt-4">예시 문장입니다</p>
-        <div class="mt-8 flex justify-center items-center space-x-4">
-            <button class="p-2 bg-gray-200 rounded-full">◀</button>
-            <div class="flex space-x-4">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-            </div>
-            <button class="p-2 bg-gray-200 rounded-full">▶</button>
-        </div>
+        <details>
+            <summary>역량</summary>
+             <p class="mt-4 text">규모 있는 개발 팀에 참여해 게임을 개발하기 위해서는 개발 역량이 필수적임을 알고 있습니다. 저의 부족함을 깊게 느끼고 있고, 이를 해결하기 위해 다분히 노력하고 있습니다. 다만 단순히 기술적인 능력만으로는 부족하다고 생각합니다. 저는 게임을 즐기는 것뿐만 아니라, 그 게임에서 무엇을 배울 수 있는지 분석하는 것을 좋아합니다.<br><br>
+
+최근 몇 년간 유행하는 오픈월드, 로그라이크, 배틀로얄 등 다양한 게임 장르를 분석하며, 각 장르가 가지는 특성과 유저들이 선호하는 요소들을 파악하고 있습니다. 예를 들어, 최근 큰 인기를 끌고 있는 '팰월드'는 '포켓몬스터'와 유사한 요소를 가지고 있지만, 서바이벌 장르와 결합하여 새로운 게임성을 창출해냈습니다. 이 게임은 팰을 포획하고 성장시키는 요소, 팰을 전투 뿐만 아니라 이동, 생산 등 다양한 부분에 참여시켜 기존 서바이벌 게임의 사실적 묘사에 따른 피로도를 낮췄습니다. 이는 기존 '포켓몬스터' 시리즈의 낮은 퀄리티와 반복되는 게임성, 서바이벌 게임의 특성상 사실적 묘사를 위한 게임피로도 문제를 적절히 해결해 많은 이들의 관심을 받았습니다. 이렇듯 단순히 게임을 개발하는 것을 넘어서, 타겟 유저를 분석하고 게임의 성공 요소를 연구하는 것이 얼마나 중요한지 보여줍니다.<br><br>
+
+저는 앞으로도 다양한 게임을 분석하고, 이러한 분석 결과를 토대로 유저들이 즐길 수 있는 게임을 개발하고자 합니다. 게임 개발은 단순히 기술적인 작업이 아니라, 유저의 니즈를 이해하고 만족시킬 수 있는 창의적인 작업이라고 생각합니다. 이를 위해 끊임없이 배우고, 연구하며, 도전하는 개발자가 되겠습니다.</p>
+       
+        
+            </details>
     </section>
 
     <section id="interest" class="bg-white py-20 text-center">
-        <h2 class="text-3xl font-bold">INTEREST</h2>
-        <p class="mt-4">예시 문장입니다</p>
-        <div class="mt-8 flex justify-center items-center space-x-4">
-            <button class="p-2 bg-gray-200 rounded-full">◀</button>
-            <div class="flex space-x-4">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
-            </div>
-            <button class="p-2 bg-gray-200 rounded-full">▶</button>
-        </div>
-    </section>
+    <h2 class="text-3xl font-bold">INTEREST</h2>
+    <div class="mt-4 text-center">
+        <details>
+            <summary>관심 기술</summary>
+            <div class="mx-auto max-w-md">
+                <details>
+                    <summary>1 유니티 엔진</summary>
+                    <p class="mt-4 text_2">유니티 엔진은 2D 및 3D 게임 개발을 위한 포괄적인 솔루션을 제공하는 게임 엔진입니다. 유니티의 주요 특징은 다음과 같습니다.<br><br>
+
+다중 플랫폼 지원: 유니티는 Windows, macOS, Android, iOS, 웹, 콘솔 등 다양한 플랫폼에 게임을 배포할 수 있습니다.<br><br>
+강력한 에디터: 유니티 에디터는 직관적이며, 개발자가 쉽게 게임 콘텐츠를 제작하고 수정할 수 있게 해줍니다.<br><br>
+풍부한 에셋 스토어: 유니티 에셋 스토어에는 다양한 에셋, 스크립트, 툴이 있어 개발 시간을 절약할 수 있습니다.</p>
+                </details>
+                <details>
+                    <summary>2 네트워크 프로그래밍</summary>
+                    <div class="mx-auto max-w-md">
+                <details>
+                    <summary>멀티플레이어 기능 구현</summary>
+                    <p class="mt-4 text_2">실시간 데이터 전송: 멀티플레이어 게임에서는 플레이어 간의 위치, 상태, 액션 등의 데이터를 실시간으로 전송해야 합니다. 네트워크 프로그래밍을 통해 이러한 데이터 전송을 효율적으로 관리할 수 있습니다.<br><br>
+동기화: 게임 내의 모든 클라이언트가 동일한 게임 상태를 공유하기 위해 동기화 작업이 필요합니다. 이를 위해 네트워크 프로그래밍은 각 클라이언트 간의 데이터 일관성을 유지하는 역할을 합니다.</p>
+                </details>
+                <details>
+                    <summary>서버와 클라이언트 통신</summary>
+                    <p class="mt-4 text_2">명령 및 이벤트 처리: 클라이언트에서 발생하는 명령과 이벤트를 서버로 보내고, 서버는 이를 처리하여 결과를 클라이언트로 되돌려 보내는 구조입니다. 이 과정을 통해 게임 로직을 중앙에서 관리하고 클라이언트 간의 일관성을 유지할 수 있습니다.<br><br>
+데이터베이스 연동: 게임 서버는 유저 데이터, 게임 상태 등을 데이터베이스에 저장하고 관리합니다. 네트워크 프로그래밍을 통해 이러한 데이터베이스와의 통신을 원활하게 수행할 수 있습니다.</p>
+                </details>
+                <details>
+                    <summary>보안</summary>
+                    <p class="mt-4 text_2">데이터 암호화: 게임 내 민감한 데이터를 보호하기 위해 데이터 전송 시 암호화를 사용합니다. 네트워크 프로그래밍 기술은 이러한 보안 기능을 구현하는 데 필수적입니다.<br><br>
+인증 및 권한 관리: 유저 인증 및 권한 관리를 통해 게임의 무결성과 공정성을 유지할 수 있습니다.</p>
+                </details>
+                        </div></div></details>
+                <details>
+                    <summary>관련 기업</summary>
+                    <p class="mt-4 text">C++과 C#을 사용하여 게임 개발자를 채용하는 주요 기업으로는 다음과 같은 곳들이 있습니다.<br><br>
+
+유비소프트(Ubisoft): 다양한 플랫폼에서 게임을 개발하며, 특히 유니티 엔진을 활용한 게임 개발에 강점을 가지고 있습니다.<br><br>
+일렉트로닉 아츠(Electronic Arts, EA): 대규모 멀티플레이어 게임을 개발하고 운영하는 기업으로, 서버와 클라이언트 기반의 게임 개발 경험이 중요합니다.<br><br>
+에픽 게임즈(Epic Games): 유니티와 함께 가장 인기 있는 게임 엔진인 언리얼 엔진(Unreal Engine)을 개발한 회사로, 고성능 게임 개발에 주력하고 있습니다.<br><br>
+닌텐도(Nintendo): 창의적이고 혁신적인 게임을 개발하는 회사로, C++과 C#을 모두 활용한 게임 개발 경험이 유리합니다.
+</p>
+                </details>
+</section>
+
 
     <section id="future" class="bg-green-100 py-20 text-center">
         <h2 class="text-3xl font-bold">FUTURE</h2>
-        <p class="mt-4">예시 문장입니다</p>
+        <details>
+            <summary>계획</summary>
+             <p class="mt-4 text">저는 게임 개발자로서의 꿈을 이루기 위해 구체적인 계획을 세우고 있습니다. 이러한 계획은 C++과 C# 프로그래밍 언어, 유니티 엔진, 알고리즘, 팀 프로젝트 경험, 그리고 클라우드 기술을 통한 배포 경험 등을 포함합니다.<br><br>
+
+첫 번째로, C++ 공부 후 알고리즘 대회에 참가해볼 계획입니다. 알고리즘과 자료구조는 게임 개발의 핵심 기술 중 하나로, 효율적인 코드 작성과 문제 해결 능력을 향상시키는 데 중요한 역할을 합니다. 알고리즘 대회에 참가하여 다양한 문제를 해결하며 실력을 쌓고, 경쟁을 통해 제 역량을 객관적으로 평가받고자 합니다.<br><br>
+
+두 번째로, C#과 유니티를 공부하여 간단히 구동되는 게임을 제작해볼 것입니다. 유니티는 현재 가장 널리 사용되는 게임 엔진 중 하나로, 2D 및 3D 게임 개발에 최적화된 도구를 제공합니다. C#을 통해 유니티 엔진을 다루고, 간단한 게임을 직접 제작해 봄으로써 게임 개발의 기본기를 다지고, 실무에서 필요한 기술을 습득할 계획입니다.<br><br>
+
+세 번째로, 게임 제작 팀 프로젝트에 참여해볼 것입니다. 게임 개발은 다양한 분야의 전문가들이 협업하여 이루어지는 작업이므로, 팀 프로젝트를 통해 협업 능력을 키우고자 합니다. 팀 프로젝트에서는 기획, 디자인, 프로그래밍 등 다양한 역할을 경험하고, 다른 팀원들과 소통하며 프로젝트를 성공적으로 완수해 나가는 과정을 통해 실무 능력을 배양할 것입니다.<br><br>
+
+네 번째로, AWS SAA(AWS Certified Solutions Architect - Associate) 자격증을 취득하고, 이를 통해 게임을 배포해볼 계획입니다. 클라우드 기술은 현대 게임 개발의 중요한 요소로, 게임 서버의 구축과 관리를 효율적으로 할 수 있게 합니다. AWS SAA 자격증을 통해 클라우드 아키텍처에 대한 이해를 높이고, 이를 바탕으로 게임을 클라우드 환경에 배포하여 실전 경험을 쌓고자 합니다. 이를 통해 서버 운영, 배포, 유지보수에 대한 전반적인 이해를 높이고, 안정적인 게임 서비스를 제공할 수 있는 역량을 갖추고자 합니다.<br><br>
+
+이러한 계획을 통해 저는 게임 개발자로서의 실력을 체계적으로 키워나갈 것입니다. 다양한 기술과 경험을 쌓아가며, 창의적이고 혁신적인 게임을 개발하고, 게임 업계에서 인정받는 전문가로 성장하고자 합니다. 또한, 게임 개발의 모든 과정을 직접 경험해봄으로써, 장차 제가 구상한 게임을 처음부터 끝까지 완성해내는 것을 목표로 하고 있습니다. 앞으로도 지속적인 학습과 도전을 통해 저의 꿈을 이루어 나가겠습니다.</p>
+        </details>
     </section>
 
     <button id="topButton" class="fixed bottom-4 right-4 p-2 bg-gray-200 rounded-full">top</button>
 
     <script>
-        const content = "안녕하세요.\n제 이름은 김도훈 입니다.\n노력하는 개발자가 되고 싶어요!";
-        const text = document.getElementById("dynamic");
-        let index = 0;
-        let txt = "";
-
-        function typing() {
-            if (index < content.length) {
-                if (content[index] === '\n') {
-                    txt += '<br>';
-                } else {
-                    txt += content[index];
-                }
-                text.innerHTML = txt;
-                index++;
-            }
-        }
-        setInterval(typing, 320);
-
         document.getElementById('topButton').addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
