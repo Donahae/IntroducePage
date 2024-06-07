@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .image-hover-shadow:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">PORTFOLIO</div>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-green-500">ABOUT</a></li>
+                <li><a href="#goal" class="hover:text-green-500">GOAL</a></li>
+                <li><a href="#issue" class="hover:text-green-500">ISSUE</a></li>
+                <li><a href="#skill" class="hover:text-green-500">SKILL</a></li>
+                <li><a href="#interest" class="hover:text-green-500">INTEREST</a></li>
+                <li><a href="#future" class="hover:text-green-500">FUTURE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="title" class="bg-green-100 py-20 text-center">
+        <h1 id="dynamic" class="text-4xl font-bold"></h1>
+        <div class="mt-8">
+            <img src="https://via.placeholder.com/150" alt="Profile Image" class="rounded-full mx-auto">
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-20 text-center">
+        <h2 class="text-3xl font-bold">ABOUT</h2>
+        <p class="mt-4">예시 문장입니다</p>
+        <div class="mt-8 flex justify-center items-center space-x-4">
+            <button class="p-2 bg-gray-200 rounded-full">◀</button>
+            <div class="flex space-x-4">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+            </div>
+            <button class="p-2 bg-gray-200 rounded-full">▶</button>
+        </div>
+    </section>
+
+    <section id="goal" class="bg-green-100 py-20 text-center">
+        <h2 class="text-3xl font-bold">GOAL</h2>
+        <p class="mt-4">예시 문장입니다</p>
+        <div class="mt-8 flex justify-center items-center space-x-4">
+            <button class="p-2 bg-gray-200 rounded-full">◀</button>
+            <div class="flex space-x-4">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+            </div>
+            <button class="p-2 bg-gray-200 rounded-full">▶</button>
+        </div>
+    </section>
+
+    <section id="issue" class="bg-white py-20 text-center">
+        <h2 class="text-3xl font-bold">ISSUE</h2>
+        <p class="mt-4">예시 문장입니다</p>
+        <p class="mt-2 text-blue-500 underline cursor-pointer">확률 논란에 관한 뉴스기사</p>
+        <div class="mt-8 flex justify-center items-center space-x-4">
+            <button class="p-2 bg-gray-200 rounded-full">◀</button>
+            <div class="flex space-x-4">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+            </div>
+            <button class="p-2 bg-gray-200 rounded-full">▶</button>
+        </div>
+    </section>
+
+    <section id="skill" class="bg-green-100 py-20 text-center">
+        <h2 class="text-3xl font-bold">SKILL</h2>
+        <p class="mt-4">예시 문장입니다</p>
+        <div class="mt-8 flex justify-center items-center space-x-4">
+            <button class="p-2 bg-gray-200 rounded-full">◀</button>
+            <div class="flex space-x-4">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+            </div>
+            <button class="p-2 bg-gray-200 rounded-full">▶</button>
+        </div>
+    </section>
+
+    <section id="interest" class="bg-white py-20 text-center">
+        <h2 class="text-3xl font-bold">INTEREST</h2>
+        <p class="mt-4">예시 문장입니다</p>
+        <div class="mt-8 flex justify-center items-center space-x-4">
+            <button class="p-2 bg-gray-200 rounded-full">◀</button>
+            <div class="flex space-x-4">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+                <img src="https://via.placeholder.com/100" alt="Image" class="image-hover-shadow">
+            </div>
+            <button class="p-2 bg-gray-200 rounded-full">▶</button>
+        </div>
+    </section>
+
+    <section id="future" class="bg-green-100 py-20 text-center">
+        <h2 class="text-3xl font-bold">FUTURE</h2>
+        <p class="mt-4">예시 문장입니다</p>
+    </section>
+
+    <button id="topButton" class="fixed bottom-4 right-4 p-2 bg-gray-200 rounded-full">top</button>
+
+    <script>
+        const content = "안녕하세요.\n제 이름은 김도훈 입니다.\n노력하는 개발자가 되고 싶어요!";
+        const text = document.getElementById("dynamic");
+        let index = 0;
+        let txt = "";
+
+        function typing() {
+            if (index < content.length) {
+                if (content[index] === '\n') {
+                    txt += '<br>';
+                } else {
+                    txt += content[index];
+                }
+                text.innerHTML = txt;
+                index++;
+            }
+        }
+        setInterval(typing, 320);
+
+        document.getElementById('topButton').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
